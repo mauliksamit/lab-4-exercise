@@ -1,0 +1,8 @@
+Report:
+
+7295 347898375840389362
+8319 347898375840389362
+
+
+Row major traversal is faster because C++ stores 2D arrays sequentially by row, which makes accessing them easy.
+However in column major traversal, because of the size of the array, C++ has to keep jumping 4000 elements to access them, which slows things down.

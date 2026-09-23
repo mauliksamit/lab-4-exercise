@@ -1,0 +1,7 @@
+Report:
+
+18689
+12653
+
+Convolution on the morton array is quicker as it stores 3d arrays contguously in memory and this makes convolving over them faster.
+However in row major convolution, 6 nested loops are required because the elements needed by the kernel are not contiguously stored in memory, which slows things down.
